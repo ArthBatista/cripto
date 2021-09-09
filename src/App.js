@@ -39,6 +39,7 @@ const filteredCoins = coins.filter(coin =>
         return <Coin key={coin.id} name={coin.name} image={coin.image}
                 symbol={coin.symbol} marketcap={coin.market_cap} volume={coin.market_cap}
                  price={coin.current_price} priceChange={coin.price_change_percentage_24h}
+                        // eslint-disable-next-line react/jsx-no-duplicate-props
                  marketcap={coin.total_volume}
                  //esta exportando para coin, onde esta configurando e renderizando
      />
